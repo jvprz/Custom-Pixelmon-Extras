@@ -1,0 +1,863 @@
+{
+  "net/mcreator/custompixelmonextras/ClientProxyCustompixelmonextras": {
+    "name": "net/mcreator/custompixelmonextras/ClientProxyCustompixelmonextras",
+    "interfaces": [
+      "net/mcreator/custompixelmonextras/IProxyCustompixelmonextras"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/Custompixelmonextras": {
+    "name": "net/mcreator/custompixelmonextras/Custompixelmonextras",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "net/mcreator/custompixelmonextras/Custompixelmonextras",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "modid": {
+            "value": "custompixelmonextras"
+          },
+          "version": {
+            "value": "1.0.0"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "net.mcreator.custompixelmonextras.ClientProxyCustompixelmonextras"
+          },
+          "serverSide": {
+            "value": "net.mcreator.custompixelmonextras.ServerProxyCustompixelmonextras"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance",
+        "value": {
+          "value": "custompixelmonextras"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBlocks(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBiomes(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerEntities(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerPotions(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerSounds(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerModels(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/CustompixelmonextrasVariables$WorldSavedDataSyncMessage": {
+    "name": "net/mcreator/custompixelmonextras/CustompixelmonextrasVariables$WorldSavedDataSyncMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/CustompixelmonextrasVariables$WorldSavedDataSyncMessageHandler": {
+    "name": "net/mcreator/custompixelmonextras/CustompixelmonextrasVariables$WorldSavedDataSyncMessageHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras": {
+    "name": "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras",
+    "interfaces": [
+      "net/minecraftforge/fml/common/IFuelHandler",
+      "net/minecraftforge/fml/common/IWorldGenerator"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerLoggedIn(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedInEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerChangedDimension(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerChangedDimensionEvent;)V"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$GuiHandler": {
+    "name": "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$GuiHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/IGuiHandler"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement": {
+    "name": "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement",
+    "interfaces": [
+      "java/lang/Comparable"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag": {
+    "name": "net/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/ServerProxyCustompixelmonextras": {
+    "name": "net/mcreator/custompixelmonextras/ServerProxyCustompixelmonextras",
+    "interfaces": [
+      "net/mcreator/custompixelmonextras/IProxyCustompixelmonextras"
+    ]
+  },
+  "net/mcreator/custompixelmonextras/creativetab/TabBSO": {
+    "name": "net/mcreator/custompixelmonextras/creativetab/TabBSO",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/creativetab/TabBSO"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/creativetab/TabLudoparia": {
+    "name": "net/mcreator/custompixelmonextras/creativetab/TabLudoparia",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/creativetab/TabLudoparia"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/creativetab/TabMedallas": {
+    "name": "net/mcreator/custompixelmonextras/creativetab/TabMedallas",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/creativetab/TabMedallas"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/creativetab/TabMusica": {
+    "name": "net/mcreator/custompixelmonextras/creativetab/TabMusica",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/creativetab/TabMusica"
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCambiadordeforma": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCambiadordeforma",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCambiadordeforma"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cambiadordeforma"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaAbedul": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaAbedul",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaAbedul"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartaabedul"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaCipres": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaCipres",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaCipres"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartacipres"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaElm": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaElm",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaElm"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartaelm"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaEncina": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaEncina",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaEncina"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartaencina"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaOak": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaOak",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaOak"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartaoak"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartaSerbal": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartaSerbal",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartaSerbal"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartaserbal"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartakukui": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartakukui",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartakukui"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartakukui"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCartamagnolia": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCartamagnolia",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCartamagnolia"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cartamagnolia"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCasinobdsp": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCasinobdsp",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCasinobdsp"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:casinobdsp"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCentropokemon": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCentropokemon",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCentropokemon"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:centropokemon"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemCincuentaMilPokedolares": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemCincuentaMilPokedolares",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemCincuentaMilPokedolares"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:cincuentamilpokedolares"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemDiezMilPokedolares": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemDiezMilPokedolares",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemDiezMilPokedolares"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:diezmilpokedolares"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemDittoFullIVS": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemDittoFullIVS",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemDittoFullIVS"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:dittofullivs"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemEnemy": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemEnemy",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemEnemy"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:enemy"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemGymbdsp": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemGymbdsp",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemGymbdsp"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:gymbdsp"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemIntroduccionbdsp": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemIntroduccionbdsp",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemIntroduccionbdsp"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:introduccionbdsp"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLegendariorandom": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLegendariorandom",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLegendariorandom"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:legendariorandom"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLegendaryshinyrandom": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLegendaryshinyrandom",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLegendaryshinyrandom"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:legendaryshinyrandom"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLlaveAEther": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLlaveAEther",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLlaveAEther"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:llaveaether"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLlaveAqua": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLlaveAqua",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLlaveAqua"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:llaveaqua"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLlaveGalaxia": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLlaveGalaxia",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLlaveGalaxia"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:llavegalaxia"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLlaveMagma": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLlaveMagma",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLlaveMagma"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:llavemagma"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemLlaveRocket": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemLlaveRocket",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemLlaveRocket"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:llaverocket"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaAlola": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaAlola",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaAlola"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallaalola"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaGalar": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaGalar",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaGalar"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallagalar"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaHoenn": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaHoenn",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaHoenn"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallahoenn"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaJohto": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaJohto",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaJohto"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallajohto"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaKalos": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaKalos",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaKalos"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallakalos"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaKanto": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaKanto",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaKanto"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallakanto"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaSinnoh": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaSinnoh",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaSinnoh"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallasinnoh"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMedallaTeselia": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMedallaTeselia",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMedallaTeselia"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:medallateselia"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemMilPoledolares": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemMilPoledolares",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemMilPoledolares"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:milpoledolares"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemPokemonAleatorio": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemPokemonAleatorio",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemPokemonAleatorio"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:pokemonaleatorio"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemPokemonShinyAleatorio": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemPokemonShinyAleatorio",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemPokemonShinyAleatorio"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:pokemonshinyaleatorio"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/item/ItemTicketllave": {
+    "name": "net/mcreator/custompixelmonextras/item/ItemTicketllave",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/item/ItemTicketllave"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "custompixelmonextras:ticketllave"
+        }
+      }
+    ]
+  },
+  "net/mcreator/custompixelmonextras/procedure/ProcedureEnemyprocedure": {
+    "name": "net/mcreator/custompixelmonextras/procedure/ProcedureEnemyprocedure",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/mcreator/custompixelmonextras/ElementsCustompixelmonextras$ModElement$Tag;",
+        "target": "net/mcreator/custompixelmonextras/procedure/ProcedureEnemyprocedure"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onRightClickItem(Lnet/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickItem;)V"
+      }
+    ]
+  }
+}

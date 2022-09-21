@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "custompixelmonextras:enemy"
+    },
+    "title": {
+      "translate": "advancements.enemyadv.title"
+    },
+    "description": {
+      "translate": "advancements.enemyadv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enemyadv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "parent": "minecraft:story/root"
+}

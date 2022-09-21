@@ -1,0 +1,56 @@
+{
+  "introduccion_p_bdsp": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:ntroduction_-_okemon_rilliant_iamond_and_hining_earl__amerip",
+        "stream": true
+      }
+    ]
+  },
+  "casino_p_bdsp": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:etronome_tyle_hop_ame_orner_-_okemon_rilliant_iamond_and_hining_earl__amerip",
+        "stream": false
+      }
+    ]
+  },
+  "good_introduccion": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:okemon_rilliant_iamond__hining_earl_-_rofessor_owan_ecreation",
+        "stream": true
+      }
+    ]
+  },
+  "centro_pokemon": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:yt1s.com-okemon-enter-ay-okemon-rilliant-iamond-and-hining-earl--amerip_1",
+        "stream": true
+      }
+    ]
+  },
+  "gym": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:yt1s.com-okemon-ym-okemon-rilliant-iamond-and-hining-earl--amerip_3",
+        "stream": true
+      }
+    ]
+  },
+  "enemy": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custompixelmonextras:yt1s.com-magine-ragons-x--nemy-yrics",
+        "stream": false
+      }
+    ]
+  }
+}
